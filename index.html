@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <header>
         <nav>
@@ -13,9 +13,11 @@
                 <li><a href="./index.html" class="a-navigation"><img src="./image/profil.png" width="25px"
                             class="img-nav"> Profil </a></li>
                 <li><a href="./page/parcours.html" class="a-navigation">Parcours 📕</a></li>
+                <li><a href="./page/projets.html" class="a-navigation">Expérience 💼</a></li>
                 <li><a href="./page/projets.html" class="a-navigation">Projets 🎯</a></li>
                 <li><a href="./page/E5.html" class="a-navigation">Tableau de synthèse 🖼️</a></li>
                 <li><a href="./page/veille.html" class="a-navigation">Veille technologique 🪙</a></li>
+                <li><a href="./page/engagement.html" class="a-navigation">Engagement étudiant 🤓 </a></li>
                 <li><a href="./page/certifications.html" class="a-navigation">Certification 📚</a></li>
             </ul>
         </nav>
@@ -29,151 +31,111 @@
     <div class="BTS-title">
         <h1>BIENVENUE, sur mon portfolio !</h1>
     </div>
+    
     <div class="BTS-container">
         <div class="BTS-box">
-            <h3>Je suis ravi de vous accueillir sur mon portfolio. Vous y trouverez mon parcours, mes projets, parcours
+            <h2>Je suis ravi de vous accueillir sur mon portfolio. Vous y trouverez mon parcours, mes projets, parcours
                 professionnel. Je suis un développeur web passionné par la création de sites et d'applications web.
                 Voici quelques-uns de mes projets récents </h3>
 
-            <h3>Actuellement en formation,je tiens à vous proposer ce portfolio afin de vous présenter mes compétences
-                et mes
+            <h3>Actuellement en formation,je tiens à vous proposer ce portfolio afin de vous présenter mes compétences et mes
                 réalisations acquisent durant ma formation.</h3>
 
-            <button id="button-cv"><a href="./annexe/CV.pdf" target="_blank" id="a-button-cv"> 👉 Découvrir mon
-                    parcours</a></button>
+            <button id="button-cv"><a href="./annexe/CV.pdf" target="_blank" id="a-button-cv"> 👉 Découvrir mon parcours</a></button>
 
         </div>
     </div>
 
-    <!--<div class="BTS-container">
-        <div class="BTS-box">
-            <h1>🎓Qu'est-ce que le BTS SIO ?</h1>
-            <p>Le BTS Services Informatiques aux Organisations (SIO) est un diplôme de niveau Bac+2 qui se déroule sur
-                deux ans. Il prépare aux métiers de l'informatique et offre deux spécialisations : SLAM
-                (Solutions Logicielles et Applications Métier) et SISR (Solutions d'Infrastructure, Systèmes et
-                Réseaux).</p>
-
-            <div class="BTS-title">
-                <h1>🎓Les deux spécialités du BTS SIO</h1>
-            </div>
-            <div class="BTS-modules">
-                <div class="BTS-module">
-                    <h1>La spécialité SLAM</h1>
-                    <p>La spécialité SLAM (Solutions Logicielles et Applications Métier) est
-                        axée sur le développement de logiciels et d'applications web et mobiles. Elle permet aux
-                        étudiants
-                        d'acquérir des compétences en programmation, gestion de bases de données, gestion de projet et
-                        sécurité des applications.
-                    </p>
-                    <h2>🖥️ Les modules de la spécialité SLAM</h2>
-                    <p>
-                    <h3>Développement Web</h3>
-                    Création de sites web dynamiques avec HTML, CSS, JavaScript, PHP et des frameworks modernes (React,
-                    Angular, Vue.js)
-                    Gestion des bases de données avec MySQL, PostgreSQL, MongoDB
-                    Développement d’API REST et intégration d’APIs tierces </p>
-                    <p id="barre"></p> <br>
-                    <p>
-                    <h3>Développement Mobile</h3>
-                    Conception d’applications mobiles pour Android et iOS
-                    Utilisation de React Native, Flutter, Kotlin, Swift
-                    Optimisation des performances et expérience utilisateur</p>
-                    <i> ⚠️ Grâce à cette spécialisation, les étudiants peuvent devenir développeurs web, développeurs
-                        mobile, ingénieurs logiciel ou encore chefs de projet.🚀</i>
+ <!-- Section BTS SIO -->
+ <div class="BTS-title">
+    <h1>Formation BTS SIO</h1>
+    <div class="modern-cards">
+        <div class="modern-card slam">
+            <div class="card-content">
+                <div class="card-icon">
+                    <i class="fas fa-code"></i>
                 </div>
+                <h2>SLAM</h2>
+                <p class="card-subtitle">Solutions Logicielles et Applications Métiers</p>
+                <ul class="card-details">
+                    <li><i class="fas fa-check"></i> Développement d'applications</li>
+                    <li><i class="fas fa-check"></i> Programmation orientée objet</li>
+                    <li><i class="fas fa-check"></i> Bases de données</li>
+                    <li><i class="fas fa-check"></i> Applications web et mobiles</li>
+                </ul>
             </div>
-            <div class="BTS-module">
-                <h1>La spécialité SISR</h1>
-                <p>La spécialité SISR (Solutions d'Infrastructure, Systèmes et Réseaux) est orientée vers
-                    l'administration des systèmes et réseaux informatiques. Elle forme
-                    les étudiants aux compétences nécessaires pour Déployer,sécuriser, maintenir des infrastructures
-                    réseau et des systèmes d’information en entreprise.
-                </p>
-                <h2>🖥️ Les modules de la spécialité SISR</h2>
-                <p>
-                <h3>Administration des systèmes et réseaux.</h3>
-                - Configuration et gestion des serveurs sous Windows et Linux <br>
-                - Mise en place et maintenance des infrastructures réseau <br>
-                - Gestion des utilisateurs et des droits d’accès <br> </p>
-                <p id="barre"></p>
-                <p>
-                <h2>Virtualisation et Cloud Computing</h2>
-                Utilisation de technologies comme VMware, Hyper-V et Docker
-                Déploiement d’infrastructures cloud avec AWS, Azure ou Google Cloud</p>
-                <i> ⚠️ Grâce à cette spécialisation, les étudiants peuvent devenir administrateurs réseau, techniciens
-                    systèmes, ingénieurs sécurité ou encore spécialistes en cloud computing et virtualisation. 🚀</i>
-                <br>
-            </div>
+            <div class="card-blur"></div>
         </div>
-    </div> -->
 
-
-    <!-- Partie TEST -->
-    <div class="BTS-container">
-        <h1>🎓Qu'est-ce que le BTS SIO ?</h1>
-        <p>Le BTS Services Informatiques aux Organisations (SIO) est un diplôme de niveau Bac+2 qui se déroule sur
-            deux ans. Il prépare aux métiers de l'informatique et offre deux spécialisations : SLAM
-            (Solutions Logicielles et Applications Métier) et SISR (Solutions d'Infrastructure, Systèmes et
-            Réseaux).</p>
-
-
-        <div class="BTS-title">
-        <h1>🎓Les deux spécialités du BTS SIO</h1>
-
-            <div class="BTS-modules">
-                <div class="test-gauche">
-                    <h2>La spécialité SISR</h2>
-                    <p>La spécialité SISR (Solutions d'Infrastructure, Systèmes et Réseaux) est orientée vers
-                        l'administration des systèmes et réseaux informatiques. Elle forme
-                        les étudiants aux compétences nécessaires pour Déployer,sécuriser, maintenir des infrastructures
-                        réseau et des systèmes d’information en entreprise.
-                    </p>
-                    <h2>🖥️ Les modules de la spécialité SISR</h2>
-                    <h3>Administration des systèmes et réseaux.</h3>
-                    - Configuration et gestion des serveurs sous Windows et Linux <br>
-                    - Mise en place et maintenance des infrastructures réseau <br>
-                    - Gestion des utilisateurs et des droits d’accès <br> </p>
-                    <p>
-                    <h2>Virtualisation et Cloud Computing</h2>
-                    Utilisation de technologies comme VMware, Hyper-V et Docker
-                    Déploiement d’infrastructures cloud avec AWS, Azure ou Google Cloud</p>
-                    <i> ⚠️ Grâce à cette spécialisation, les étudiants peuvent devenir administrateurs réseau,
-                        techniciens
-                        systèmes, ingénieurs sécurité ou encore spécialistes en cloud computing et virtualisation.
-                        🚀</i>
+        <div class="modern-card sisr">
+            <div class="card-content">
+                <div class="card-icon">
+                    <i class="fas fa-network-wired"></i>
                 </div>
-                <div class="test-droite">
-                    <h2>La spécialité SLAM</h2>
-                    <p>La spécialité SLAM (Solutions Logicielles et Applications Métier) est
-                        axée sur le développement de logiciels et d'applications web et mobiles. Elle permet aux
-                        étudiants
-                        d'acquérir des compétences en programmation, gestion de bases de données, gestion de projet et
-                        sécurité des applications.
-                    </p>
-                    <h2>🖥️ Les modules de la spécialité SLAM</h2>
-                    <h3>Développement Web</h3>
-                    <p>Création de sites web dynamiques avec HTML, CSS, JavaScript, PHP et des frameworks modernes
-                        (React,
-                        Angular, Vue.js)
-                        Gestion des bases de données avec MySQL, PostgreSQL, MongoDB
-                        Développement d’API REST et intégration d’APIs tierces </p>
-                    <h3>Développement Mobile</h3>
-                    Conception d’applications mobiles pour Android et iOS
-                    Utilisation de React Native, Flutter, Kotlin, Swift
-                    Optimisation des performances et expérience utilisateur</p>
-                    <i> ⚠️ Grâce à cette spécialisation, les étudiants peuvent devenir développeurs web, développeurs
-                        mobile, ingénieurs logiciel ou encore chefs de projet.🚀</i>
+                <h3>SISR</h3>
+                <p class="card-subtitle">Solutions d'Infrastructure, Systèmes et Réseaux</p>
+                <ul class="card-details">
+                    <li><i class="fas fa-check"></i> Administration réseau</li>
+                    <li><i class="fas fa-check"></i> Cybersécurité</li>
+                    <li><i class="fas fa-check"></i> Virtualisation</li>
+                    <li><i class="fas fa-check"></i> Services système et réseau</li>
+                </ul>
+            </div>
+            <div class="card-blur"></div>
+        </div>
+    </div>
+</div>            
+
+    <!-- Section Compétences -->
+    <div class="competences-section">
+        <h1>Compétences en Développement</h1>
+        <div class="competences-grid">
+            <div class="competences-category">
+                <h3>Front-end</h3>
+                <div class="competences-items">
+                    <div class="competences-item">
+                        <i class="fab fa-html5"></i>
+                        <div> <img src="./image/html-5.png" width="50px"></div> <span>HTML</span>
+                    </div>
+                    <div class="competences-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <img src="./image/css-3.png" width="50px"> <span>CSS</span>
+                    </div>
+                    <div class="competences-item">
+                        <i class="fab fa-js"></i>
+                        <img src="./image/javascript.png" width="50px"> <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="competences-category">
+                <h3>Back-end</h3>
+                <div class="competences-items">
+                    <div class="competences-item">
+                        <i class="fab fa-php"></i>
+                        <img src="./image/php.png" width="50px"> <span>PHP</span>
+                    </div>
+                    <div class="competences-item">
+                        <i class="fas fa-database"></i>
+                        <img src="./image/mysql.png" width="50px"> <span>MySQL</span> 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
+
 </body>
 
 
 <footer>
-    <p> &copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+     <p> &copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+
+     <div>
+        <div>
+            <a href="https://www.linkedin.com/in/anis-chaouch-613280279/" target="_blank"><img src="./image/linkedin.png" width="30px"></a>
+            <a href="https://github.com/Glicheur94" target="_blank"><img src="./image/Github.png" width="30px"></a>
+                
+        </div>
+     </div>
 </footer>
 
 </html>
