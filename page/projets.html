@@ -10,30 +10,203 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html" class="a-navigation"><img src="../image/profil.png" width="25px"
-                            class="img-nav"> Profil </a></li>
-                <li><a href="./page/parcours.html" class="a-navigation">Parcours 📕</a></li>
-                <li><a href="./page/.html" class="a-navigation">Expérience 💼</a></li>
-                <li><a href="./page/projets.html" class="a-navigation">Projets 🎯</a></li>
-                <li><a href="./page/E5.html" class="a-navigation">Tableau de synthèse 🖼️</a></li>
-                <li><a href="./page/veille.html" class="a-navigation">Veille technologique 🪙</a></li>
-                <li><a href="./page/engagement.html" class="a-navigation">Engagement étudiant 🤓 </a></li>
-                <li><a href="./page/certifications.html" class="a-navigation">Certification 📚</a></li>
+                <li><a href="../index.html" class="a-navigation">
+                    <img src="../image/profil.png" width="25px" class="img-nav"> Profil </a></li>
 
+                <li><a href="./parcours.html" class="a-navigation">Parcours 📕</a></li>
+                <li><a href="./E5.html" class="a-navigation">Tableau de synthèse 🖼️</a></li>
+                <li><a href="./veille.html" class="a-navigation">Veille technologique 🪙</a></li>
+                <li><a href="./certifications.html" class="a-navigation">Certification 📚</a></li>
             </ul>
         </nav>
 
     </header>
-    <body>
 
+<body>
+    <!DOCTYPE html>
+    <html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projets 🎯</title>
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            .page-content {
+                padding: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 4rem;
+                text-align: center;
+                color: var(--text-color);
+            }
+
+            .projects-container {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+            }
+
+            .project-card {
+                position: relative;
+                padding: 2rem;
+                background: var(--card-bg);
+                border-radius: 10px;
+                border: 1px solid rgba(127, 116, 247, 0.3);
+                box-shadow: 0 0 20px rgba(93, 79, 255, 0.05);
+            }
+
+            .project-card::before {
+                content: '';
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                right: -1px;
+                bottom: -1px;
+                background: linear-gradient(45deg, rgba(134, 124, 250, 0.2), transparent);
+                border-radius: 11px;
+                z-index: -1;
+            }
+
+            .project-content {
+                padding: 1rem;
+            }
+
+            .project-content h3 {
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+                color: var(--text-color);
+            }
+
+            .project-content p {
+                margin-bottom: 2rem;
+                line-height: 1.8;
+                color: var(--text-color);
+                font-size: 1.1rem;
+            }
+
+            .project-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 2rem;
+            }
+
+            .project-tags {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .project-links {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .project-tags span {
+                background: rgba(118, 116, 158, 0.05);
+                color: var(--text-color);
+                padding: 0.7rem 1.2rem;
+                border-radius: 5px;
+                font-size: 0.9rem;
+                border: 1px solid rgba(139, 136, 174, 0.2);
+            }
+
+            .project-link {
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: var(--text-color);
+                text-decoration: none;
+                font-size: 1rem;
+                transition: all 0.3s ease;
+                background: rgba(159, 156, 180, 0.1);
+                border: 1px solid rgba(137, 135, 161, 0.3);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page-content">
+            <div class="BTS-title">
+                <h1>Certification 📚</h1> </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-card">
+                            <div class="project-content">
+                                <h3>Application Web</h3>
+                                <p>Développement d'une application web complète avec une base de données MySQL. Frontend
+                                    en HTML/CSS/JavaScript et backend en PHP.</p>
+                                <div class="project-footer">
+                                    <div class="project-tags">
+                                        <span>HTML/CSS</span>
+                                        <span>JavaScript</span>
+                                        <span>PHP</span>
+                                        <span>MySQL</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" title="Voir le projet">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="https://github.com/votre-compte/projet-web" class="project-link"
+                                            target="_blank" title="Voir sur GitHub">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-container">
+                        <div class="project-card">
+                            <div class="project-content">
+                                <div class="project-card">
+                                    <div class="project-content">
+                        <h3>Application Client Lourd</h3>
+                        <p>Développement d'une application desktop en C# pour la gestion interne. Utilisation des
+                            concepts de programmation orientée objet et interface graphique Windows Forms.</p>
+                        <div class="project-footer">
+                            <div class="project-tags">
+                                <span>C#</span>
+                                <span>Windows Forms</span>
+                                <span>POO</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir le projet">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="https://github.com/votre-compte/projet-client-lourd" class="project-link"
+                                    target="_blank" title="Voir sur GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
     </body>
 
     <footer>
         <p> &copy; 2025 Mon Portfolio. Tous droits réservés.</p>
 
         <div>
-            <a href="https://www.linkedin.com/in/anis-chaouch-613280279/" target="_blank"><img src="../image/linkedin.png" width="30px"></a>
-            <a href="https://github.com/Glicheur94" target="_blank"><img src="../image/Github.png" width="30px"></a>  
+            <a href="https://www.linkedin.com/in/anis-chaouch-613280279/" target="_blank"><img
+                    src="../image/linkedin.png" width="30px"></a>
+            <a href="https://github.com/Glicheur94" target="_blank"><img src="../image/Github.png" width="30px"></a>
         </div>
     </footer>
+
     </html>
