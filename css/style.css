@@ -392,6 +392,7 @@ h1 {
     margin-bottom: 1.5rem;
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease;
+    color: white;
 }
 
 .experience-card:hover {
@@ -433,6 +434,7 @@ h1 {
     padding-left: 1.5rem;
     position: relative;
     font-size: 0.95rem;
+    color: white;
 }
 
 .missions li::before {
