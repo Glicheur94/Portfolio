@@ -17,8 +17,9 @@ body {
 
 .a-navigation {
     text-decoration: none;  
-    color: #3c3939;  
-    padding: 15px;  
+    color: #3c3939;
+    min-height: 50px;
+    padding: 12px;  
     margin: 15px;  
     border-radius: 5px;  
     background-color: #f0f0f0;  
@@ -422,6 +423,8 @@ h1 {
 .missions {
     list-style: none;
     margin: 1rem 0;
+    color: #f0f0f0;
+
 }
 
 .missions li {
